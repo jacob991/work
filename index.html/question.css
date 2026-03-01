@@ -1,0 +1,66 @@
+body {
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial;
+        }
+
+        #noBtn {
+            position: absolute;
+        }
+
+        img {
+            width: 250px;
+            margin-top: 20px;
+            display: none;
+        }
+        #kittyContainer {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 9999;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: auto;
+        }
+
+        #kittyContainer > img {
+            display: inline-block;
+            width: 250px;
+        }
+
+        #kittyContainer > p,
+        #kittyContainer > button {
+            flex-basis: 100%;
+        }
+        #thankYouContainer {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            z-index: 10000;
+        }
+
+        #thankYouContainer img { width: 250px; display:block; margin: 10px auto 0; }
+
+        #yesInKitty {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        #yesInKitty:hover {
+            background-color: #45a049;
+        }
